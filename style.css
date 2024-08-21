@@ -360,9 +360,9 @@ article .icon{
 }
 
 .project-img{
-    border-radius: 2rem;
-    width: 60%;
-    height: 60%;
+    border-radius: 1rem;
+    width: 30%;
+    height: 30%;
 }
 
 .project-title{
@@ -397,4 +397,32 @@ article .icon{
 
 .contact-info-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+.email-icon{
+    height: 2.5rem  ;
+}
+
+/* Footer Section */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+    color: rgb(163, 163, 163);
 }
