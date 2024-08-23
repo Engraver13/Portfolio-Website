@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -40,59 +41,64 @@
             <img src="./assets/profile1.png" alt="Abhishek Engraver Profile Photo">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Abhishek Engraver</h1>
-            <p class="section__text__p2">Software Developer</p>
+            <p class="section__text__p1" data-aos="fade-up" data-aos-duration="1000">Hello, I'm</p>
+            <h1 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Abhishek Engraver</h1>
+            <p class="section__text__p2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Software Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
                     Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
                     Contact Info
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Linked In Profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/abhishekengraver/'"/>
-                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href = 'https://github.com/Engraver13/'"/>
+                <img src="./assets/linkedin.png" alt="Linked In Profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/abhishekengraver/'" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="1000"/>
+                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href = 'https://github.com/Engraver13/'" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="1000"/>
             </div>
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1" data-aos="fade-up" data-aos-duration="600">Get To Know More</p>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic2.jpg" alt="Profile Picture" class="about-pic"/>
+                <img src="./assets/about-pic2.jpg" alt="Profile Picture" class="about-pic" data-aos="fade-right"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-duration="1000"/>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
+                    <div class="details-container" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" data-aos-delay="900">
                         <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
                         <h3>Experience</h3>
                         <p>2+ years <br> Online Chat Representative</p>
                     </div>
-                    <div class="details-container">
+                    <div class="details-container" data-aos="fade-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" data-aos-delay="1100">
                         <img src="./assets/education.png" alt="Education Icon" class="icon"/>
                         <h3>Education</h3>
                         <p> Bachelors in Computer Application<br> M.Sc. Information Technology</p>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>I am passionate about crafting innovative solutions and tackling complex challenges with a blend of technical expertise and creativity. With a strong foundation in various programming languages and frameworks, I excel in both front-end and back-end development, and am adept at integrating APIs and optimizing performance. My commitment to continuous learning and effective communication ensures that I contribute meaningfully to collaborative projects while driving technological progress. I am eager to apply my skills in a dynamic environment where I can grow professionally and deliver impactful software solutions.</p>
+                <div class="text-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <p style="text-align: justify;">I am passionate about crafting innovative solutions and tackling complex challenges with a blend of technical expertise and creativity. With a strong foundation in various programming languages and frameworks, I excel in both front-end and back-end development, and am adept at integrating APIs and optimizing performance. My commitment to continuous learning and effective communication ensures that I contribute meaningfully to collaborative projects while driving technological progress. I am eager to apply my skills in a dynamic environment where I can grow professionally and deliver impactful software solutions.</p>
                 </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
     <section id="experience">
-        <p class="section__text__p1"> Explore My</p>
-        <h1 class="title"> Experience</h1>
+        <p class="section__text__p1" data-aos="fade-up" data-aos-duration="600"> Explore My</p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"> Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="details-container" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <h2 class="experience-sub-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">Frontend Development</h2>
                     <div class="article-container">
-                      <article>
+                      <article data-aos="fade-right" data-aos-duration="600" data-aos-delay="1200">
                             <img
                               src="./assets/checkmark.png"
                               alt="Experience icon"
@@ -103,7 +109,7 @@
                               <p>Intermediate</p>
                             </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-left" data-aos-duration="600" data-aos-delay="1200">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -114,7 +120,7 @@
                           <p>Intermediate</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-right" data-aos-duration="600" data-aos-delay="1500">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -125,7 +131,7 @@
                           <p>Intermediate</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-left" data-aos-duration="600" data-aos-delay="1500">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -136,7 +142,7 @@
                           <p>Basic</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-up" data-aos-duration="600" data-aos-delay="1500">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -149,10 +155,10 @@
                       </article>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="details-container" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1800">
+                    <h2 class="experience-sub-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="2100">Backend Development</h2>
                     <div class="article-container">
-                      <article>
+                      <article data-aos="fade-right" data-aos-duration="600" data-aos-delay="2400">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -163,7 +169,7 @@
                           <p>Intermediate</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-left" data-aos-duration="600" data-aos-delay="2400">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -174,7 +180,7 @@
                           <p>Basic</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-right" data-aos-duration="600" data-aos-delay="2700">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -185,7 +191,7 @@
                           <p>Basic</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-left" data-aos-duration="600" data-aos-delay="2700">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -196,7 +202,7 @@
                           <p>Intermediate</p>
                         </div>
                       </article>
-                      <article>
+                      <article data-aos="fade-up" data-aos-duration="600" data-aos-delay="2700">
                         <img
                           src="./assets/checkmark.png"
                           alt="Experience icon"
@@ -214,31 +220,30 @@
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1" data-aos="fade-up" data-aos-duration="1000">Browse My Recent</p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/MyUniversity.jpg" alt="Project 1" class="project-img">
-                    <img src="./assets/myUniversity1.jpg" alt="Project 1" class="project-img">
-                    
+                <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                  <div class="article-containers">
+                    <img src="./assets/MyUniversity.jpg" alt="Project 1" class="project-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                    <img src="./assets/myUniversity1.jpg" alt="Project 1" class="project-img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                  </div>
+                  <h2 class="experience-sub-title project-title" style="font-size: 1.5rem;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">My University (Bachelors Project)</h2>
+                  <p style="font-size: 15px;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">The project aimed to develop an application that digitizes the entire admission process, allowing users to search for universities by city and course. It provides a user-friendly interface for finding and applying to universities, saving both time and cost.</p> <br>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Engraver13/MyUniversity'" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">GitHub</button>
+                  </div>
                 </div>
-                <h2 class="experience-sub-title project-title" style="font-size: 1.5rem;">My University (Bachelors Project)</h2>
-                <p style="font-size: 15px;">The project aimed to develop an application that digitizes the entire admission process, allowing users to search for universities by city and course. It provides a user-friendly interface for finding and applying to universities, saving both time and cost.</p> <br>
+                <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="article-containers">
+                    <img src="./assets/GLSeUniverse.jpg" alt="Project 1" class="project-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                    <img src="./assets/GLSeUniverse1.jpg" alt="Project 1" class="project-img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                </div>
+                <h2 class="experience-sub-title project-title" style="font-size: 1.5rem;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">GLSeUniVerse (Masters Project)</h2>
+                <p style="font-size: 15px;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200">I designed a system that merges QR-based ID authentication with alumni engagement and document management. It simplifies campus entry, fosters alumni-student connections, and automates document requests, improving both security and efficiency.</p> <br>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Engraver13/MyUniversity'">GitHub</button>
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/GLSeUniverse.jpg" alt="Project 1" class="project-img">
-                    <img src="./assets/GLSeUniverse1.jpg" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title" style="font-size: 1.5rem;">GLSeUniVerse (Masters Project)</h2>
-                <p style="font-size: 15px;">I designed a system that merges QR-based ID authentication with alumni engagement and document management. It simplifies campus entry, fosters alumni-student connections, and automates document requests, improving both security and efficiency.</p> <br>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Engraver13/GLSeUniVerse-Abhishek-'">GitHub</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Engraver13/GLSeUniVerse-Abhishek-'" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1000">GitHub</button>
                 </div>
                 </div>
             </div>
@@ -246,18 +251,18 @@
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'"/>
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
+        <p class="section__text__p1" data-aos="fade-up" data-aos-duration="1000">Get In Touch</p>
+        <h1 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Contact Me</h1>
+        <div class="contact-info-upper-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="contact-info-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
                 <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
                 <p><a href="mailto:engraver13@gmail.com">engraver13@gmail.com</a></p>
             </div>
-            <div class="contact-info-container">
+            <div class="contact-info-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
                 <img src="./assets/call.png" alt="Email Icon" class="icon contact-icon"/>
                 <p><a href="tel:+917043731699">(704)-373-1699</a></p>
             </div>
-            <div class="contact-info-container">
+            <div class="contact-info-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
                 <img src="./assets/whatsapp.png" alt="Email Icon" class="icon contact email-icon "/>
                 <p><a href="https://wa.me/917043731699">WhatsApp</a></p>
             </div>
@@ -277,5 +282,9 @@
         <p>Copyright &#169; 2024 Abhishek Engraver. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
